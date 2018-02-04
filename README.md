@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Working rails app on elastic beanstalk. Just be sure to create an RDS database and input necessary environment variables:
 
-Things you may want to cover:
+- RDS_HOSTNAME – The hostname of the DB instance.
 
-* Ruby version
+- Amazon RDS console label – Endpoint (this is the hostname)
 
-* System dependencies
+- RDS_PORT – The port on which the DB instance accepts connections. The default value varies between DB engines.
 
-* Configuration
+- Amazon RDS console label – Port
 
-* Database creation
+- RDS_DB_NAME – The database name, ebdb.
 
-* Database initialization
+- Amazon RDS console label – DB Name
 
-* How to run the test suite
+- RDS_USERNAME – The user name that you configured for your database.
 
-* Services (job queues, cache servers, search engines, etc.)
+- Amazon RDS console label – Username
 
-* Deployment instructions
+- RDS_PASSWORD – The password that you configured for your database.
 
-* ...
+- SECRET_KEY_BASE - necessary for rails app
